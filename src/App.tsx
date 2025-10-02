@@ -3,7 +3,6 @@ import { Mail, Instagram, ShieldCheck, Hammer, Heart, Camera, MapPin } from "luc
 
 
 // Accent as CSS variable so Tailwind doesn't need to parse dynamic classes
-const ACCENT = "#8A1C1C";
 
 // Replace these with your images in /public/gallery (or full URLs)
 // Example: put files in public/gallery/rope1.webp etc.
@@ -14,7 +13,6 @@ const galleryItems = [
 ];
 
 export default function App() {
-  const style = { ["--accent" as unknown as string]: ACCENT } as React.CSSProperties;
 
   // Age gate
   const [ageOk, setAgeOk] = useState(false);
